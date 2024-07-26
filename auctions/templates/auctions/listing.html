@@ -1,0 +1,16 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h1 class="text-center">{{ listing.title }}</h1>
+
+    <div class="d-flex justify-content-center">
+        <img src="{{ listing.imageUrl }}" class="text-center" alt="">
+    </div>
+
+    <p>{{ listing.description }}</p>
+    <h3>${{ listing.bid }}.00</h3>
+    <h2>Details</h2>
+    <ul>
+        <li>Category: {{ category.name }}</li>
+    </ul>
+{% endblock %}
